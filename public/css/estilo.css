@@ -1,0 +1,51 @@
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header h2{
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color:rgb(32, 36, 110);
+    color: white;
+}
+
+
+h3{
+    align-items: center;
+}
+
+
+.opcinesNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    color:rgb(32, 36, 110);
+    align-items: center;
+}
+ul{
+    text-align: center;
+}
+.navBar{
+    text-align: center;
+    align-items: center;
+}
+.navBar i{
+    padding: 0.2rem 0.2rem;
+    margin: 0 0.2rem;
+}
+.vista{
+    padding: 0.2rem 0.2rem;
+    margin: 0.2rem 0.2rem;
+    text-align: right;
+}
+
+.section-2{
+    padding: 2rem 2rem;
+    text-align: center;
+   
+}
+

@@ -1,0 +1,76 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        selectable: true, // Permite seleccionar un rango para crear eventos
+        editable: true,  // Permite mover eventos (solo en la sesión actual)
+        eventStartEditable: true, 
+        eventResizableFromStart: true, 
+        events: 'cargar_eventos.php', // Cargar eventos desde la BD
+
+        select: function(info) {
+            var title = prompt("Ingrese el nombre del evento:");
+            if (title) {
+                $.ajax({
+                    url: 'guardar_evento.php',
+                    type: 'POST',
+                    data: {
+                        title: title,
+                        start: info.startStr,
+                        end: info.endStr
+                    },
+                    success: function(response) {
+                        calendar.refetchEvents(); // Recargar eventos desde la BD
+                        alert('Evento guardado correctamente');
+                    }
+                });
+            }
+            calendar.unselect();
+        },
+
+        eventDrop: function(info) {
+            // Bloquear edición si el evento ya está guardado en la BD
+            $.ajax({
+                url: 'verificar_edicion.php',
+                type: 'POST',
+                data: { id: info.event.id },
+                success: function(response) {
+                    if (response === 'bloqueado') {
+                        alert('No puedes modificar este evento.');
+                        info.revert(); // Revertir cambios en el calendario
+                    } else {
+                        $.ajax({
+                            url: 'actualizar_evento.php',
+                            type: 'POST',
+                            data: {
+                                id: info.event.id,
+                                start: info.event.startStr,
+                                end: info.event.endStr
+                            }
+                        });
+                    }
+                }
+            });
+        },
+
+        eventClick: function(info) {
+            if (confirm('¿Deseas eliminar este evento?')) {
+                $.ajax({
+                    url: 'eliminar_evento.php',
+                    type: 'POST',
+                    data: { id: info.event.id },
+                    success: function(response) {
+                        if (response === 'bloqueado') {
+                            alert('No puedes eliminar este evento.');
+                        } else {
+                            info.event.remove();
+                            alert('Evento eliminado.');
+                        }
+                    }
+                });
+            }
+        }
+    });
+
+    calendar.render();
+});

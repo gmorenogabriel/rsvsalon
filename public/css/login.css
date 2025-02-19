@@ -1,0 +1,42 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-login-cabecera {
+    width: 100%;
+    margin:0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(17, 46, 85);
+    color: #fff;
+}
+
+.form-login-cabecera input{
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+.form-login-cabecera .submit{
+    border-radius: 3rem;
+}
+
+img{
+    opacity: 0.4;
+    width: 60%;
+    height: 10%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+}
+
+.container-fluid{
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+

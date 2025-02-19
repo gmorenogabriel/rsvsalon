@@ -1,0 +1,18 @@
+.mostrarfecha{
+    align-items:center;
+    text-align: center;
+}
+.fecha_s{
+    visibility:hidden;
+}
+.container-fluid{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+.titulo h2{
+    text-align: center;
+    align-items: center;
+}

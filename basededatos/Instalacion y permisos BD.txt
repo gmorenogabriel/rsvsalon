@@ -1,0 +1,9 @@
+-- Crear la base de Datos ci_4 con utfm8_spanish_ci2
+-- importar la BD
+CREATE USER 'gmoreno'@'localhost' IDENTIFIED BY 'morega';
+GRANT ALL PRIVILEGES ON `CI_4`.* TO 'gmoreno'@'localhost';
+FLUSH PRIVILEGES;
+
+
+--Por linea de comandos para importar toda la Base de Datos CI_4`
+mysqldump -u gmoreno -p  ci_4 < ..\BaseDeDatos\ci_4.sql
