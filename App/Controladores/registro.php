@@ -21,7 +21,8 @@ if($i>0){
   echo "<script>Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'Cedula ya Existe'
+    text: 'Cedula ya Existe',
+	timer: 3000
   })</script>";
 }else{
     //$agregar="INSERT into paciente(nombre_paciente,cedula,telefono,email,id_tipo) values('$nombre',$ced,$telefono,'$correo',$tipo)";
@@ -33,13 +34,15 @@ if($i>0){
         echo "<script>Swal.fire({
             icon: 'success',
             title: 'Exito',
-            text: 'Usuario Guardado'
+            text: 'Usuario Guardado',
+			timer: 3000
           });</script> ";
     }else{
         echo "<script>Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Error en el servidor'
+            text: 'Error en el servidor',
+			timer: 3000
           })</script>";
     }
 }

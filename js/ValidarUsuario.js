@@ -1,3 +1,8 @@
+// ValidarUsuario.js NO VA ESTE
+<?php
+$ahora = date('Y-m-d H:i:s');
+error_log($ahora . ' - ValidarUsuarios.js'  . "\n", 3, $ruta);
+?>
 $(document).ready(function(){
     var modal2=document.getElementById('modelId');
     $('#cedula').on("change",function(){

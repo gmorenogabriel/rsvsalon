@@ -16,4 +16,5 @@ while($arr=mysqli_fetch_array($query)){
     $cadena=$cadena.'<option value='.$arr[0].'>'.utf8_encode($arr[1]).'</option>';
 }
 echo $cadena."</select>";
+$query->close();
 ?>

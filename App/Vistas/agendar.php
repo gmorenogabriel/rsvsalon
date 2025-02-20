@@ -35,7 +35,7 @@
 <div class="navBar" id="navBar">
     <ul class="opcinesNav">
         <li class="nav-item"> 
-        <a href="inicio.php" class="nav-link"><i class="icono fa fa-house"></i>
+        <a href="index.php" class="nav-link"><i class="icono fa fa-house"></i>
         Inicio
         </a>
         </li>
@@ -145,7 +145,8 @@
             Swal.fire({
                 icon:"error",
                 title:"Oopss!",
-                text:"La fecha no puede ser menor o igual a la actual"
+                text:"La fecha no puede ser menor o igual a la actual",
+				timer: 3000
             });
           }else{
            $('#modalCita').modal('show');

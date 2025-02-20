@@ -10,4 +10,5 @@ while($arr=mysqli_fetch_array($query)){
     $array[]=$arr;
 }
 echo json_encode($array);
+$query->close();
 ?>

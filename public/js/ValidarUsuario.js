@@ -1,29 +1,4 @@
-$(document).ready(function(){
-    var modal2=document.getElementById('modelId');
-    $('#cedula').on("change",function(){
-        var cedula=$(this).val();
-       
-        if(!(/^\d{10}$/.test(cedula))){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Cedula deben ser 10 digitos'
-              });
-        }else{
-            $.ajax({
-                url:"./App/Controladores/comprobarcedula.php",
-                type:"POST",
-                data:{ cedula:cedula},
-                success:function(respuesta){
-                   $("#resultado").html(respuesta);
-                },
-                error:function(err,msg){
-                    alert(msg);
-                }
-            })
-        }
-})
-});
+
 // $(document).ready(function(){
     // let dropdown=$('#sangre');
 	// console.log('ValidarUsuarios document.ready #sangre');
@@ -53,25 +28,29 @@ if( ced==null || usuario==null|| telefono==null || correo==null){
 Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'No puede haber campos vacios'
+    text: 'No puede haber campos vacios',
+	timer: 3000
   });
     }else if(!(/^\d{10}$/.test(ced))){
         Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'la cedula es de 10 digitos' 
+    text: 'la cedula es de 10 digitos',
+	timer: 3000
 });
     }else if(!(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(correo))){
         Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'El correo tiene que ser: xxxx@xxxx.com' 
+    text: 'El correo tiene que ser: xxxx@xxxx.com',
+	timer: 3000
 });
     }else if(telefono.length < 6 || telefono.length > 18){
         Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'Tu telefono tiene que estar entre 6 y 18' 
+    text: 'Tu telefono tiene que estar entre 6 y 18',
+	timer: 3000
         });
     }else{
 $.ajax({
@@ -97,6 +76,39 @@ $.ajax({
 
 });
 });
+
+$(document).ready(function(){		  
+
+	$('#cedulaVER').on("change",function(e){
+		e.preventDefault();
+		let cedula=$(this).val();
+		let accion='MiAccion';
+		let usuario='El Patito Feo';
+		let correo='El Correo';
+		console.log(cedula, "-", usuario, "-",  correo, "-",  accion);
+
+		$.ajax({
+				url:"./App/Controladores/leerUsuarios.php",
+				type:"POST",
+				data:{ ced:cedula, nombre:usuario, correo:correo},
+				success:function(respuesta){
+					console.log('Respuesta: ', respuesta);						
+					document.getElementById('resultado').innerHTML=respuesta;
+					//alert(respuesta);				
+					if(respuesta === "EXISTE"){ // Existe el Usuario
+						// Si la Cedula ya existe continuamos con la navegación a Solicitar horas
+						window.location.assign("http://localhost:8084/rsvsalon/solicitudReserva1.php");
+					}else{
+						$('#modelId').modal('show');
+					}
+				},
+				error:function(err,msg){
+					alert(msg);
+				}
+		})
+	})				
+});
+
 
 function limpiar(){
     $('#ced').val("");

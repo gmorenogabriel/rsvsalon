@@ -12,13 +12,15 @@ if($queryfecha){
     echo "<script>Swal.fire({
         icon: 'success',
         title: 'Exito',
-        text: 'Eliminada Cita'
+        text: 'Eliminada Cita',
+		timer: 3000
       });  </script> ";
 }else{
     echo "<script>Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Error en la eliminacion'
+        text: 'Error en la eliminacion',
+		timer: 3000
       })</script>";
 }
 

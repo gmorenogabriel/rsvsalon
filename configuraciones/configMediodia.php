@@ -38,7 +38,7 @@
                              </div>
 							 -->
 				
-<h2>Consideraciones:</h2>
+<h2>Consideraciones de la Solicitud de Reserva al Mediodía:</h2>
 	<ul class="custom-list">
 		<li>El horario disponible al Mediodía corresponde desde las 11:00 a las 17:59.</li>
 		<li>La cantidad máxima de personas en el Salón es de 20 personas.</li>
@@ -57,6 +57,7 @@
 		<p><i class="fas fa-check-circle"></i> 2-Enviar por correo electrónico el comprobante resultante del pago al correo:</p>
 		   <li>gmorenogabriel@gmail.com</li>
 		   <li>Indicando Fecha de la Reserva</li>
+		   <li>Cédula de Identidad</li>
 		   <li>Nro.Apartamento</li>
 		   <li>Nombre completo</li>
 		   <li>Celular de contacto</li>

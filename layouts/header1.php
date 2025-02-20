@@ -7,14 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="stylesheet" type="text/css" media="screen">
         <title>Edificio 14 de Mayo</title>
-		<link href="../public/css/estilo.css" rel="stylesheet" />
+		<link href="public/css/estilo.css" rel="stylesheet" />
 <!--		<link type="text/css" href="css/styles.css" rel="stylesheet" /> -->
 
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-	<link href="../css/datatables.min.css" rel="stylesheet" >
-	<link href="../public/assets/fontawesome/css/all.min.css" rel="stylesheet" >
-	<link href="../public/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" >
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+	<link href="css/datatables.min.css" rel="stylesheet" >
+	<link href="public/assets/fontawesome/css/all.min.css" rel="stylesheet" >
+	<link href="public/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" >
 	</head>
 	<body>
 		<div id="layoutSidenav_content" style=" height: 150px;"> 

@@ -45,14 +45,16 @@ if($query){
     echo "<script>Swal.fire({
         icon: 'success',
         title: 'Exito',
-        text: 'fechaguardada'
+        text: 'fechaguardada',
+		timer: 3000
       }); 
       $('#modalCita').modal('hide');</script> ";
 }else{
     echo "<script>Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Error en el servidor'
+        text: 'Error en el servidor',
+		timer: 3000
       })</script>";
 }
    
