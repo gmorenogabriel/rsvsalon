@@ -1,4 +1,13 @@
 <?php
+// Permitir solicitudes desde cualquier origen
+header("Access-Control-Allow-Origin: *");  // Permite todos los orígenes. Puedes especificar un origen específico si es necesario.
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");  // Permite los métodos GET, POST y OPTIONS
+header("Access-Control-Allow-Headers: Content-Type");  // Permite el encabezado Content-Type
+
+// Si la solicitud es OPTIONS (preflight request), finaliza aquí
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    exit(0);
+}
 
 include('../conexion/dbConfig.php');
 $cedula=htmlspecialchars($_POST["cedula"]);//recojemos lo seleccionado

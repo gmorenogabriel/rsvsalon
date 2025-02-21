@@ -7,26 +7,22 @@
     <link rel="stylesheet" href="../../public/css/estilo.css">
     <title>Document</title>
     <?php 
-    include('../conexion/dbConfig.php');
-	include('../conexion/rutaLog.php');
-    //include('../conexion/seguridad.php');
-    ?>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+		include('../conexion/dbConfig.php');
+		//include('../conexion/seguridad.php');
+		$config = include('../conexion/rutaLog.php'); // Cargar configuración
+		error_log($config['ahora'] . ' - inicio.php' . " - linea 32 \n", 3, $config['ruta']);
+	?>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
- 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href='../../node_modules/fullcalendar/main.css' rel='stylesheet' />
-    <script src='../../node_modules/fullcalendar/main.js'></script>
-    <script src='../../node_modules/fullcalendar/locales/es.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-   <!-- <script src='../../public/js/agendar.js'></script>
+    <link href="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.css"  rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/rsvsalon/public/assets/fontawesome/css/all.min.css" rel="stylesheet" >
+    <link href="/rsvsalon/public/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="../../public/css/agendar.css">
-	 -->
-   
+
+
 <header>
 <h2 class="titulo">Alta de Usuario</a>
 </header>
@@ -49,14 +45,14 @@
     </ul>
 </div>
 	<?php 
-		//$ruta='../../writeable/rsvsalon.log';
-		//$ahora = date('Y-m-d H:i:s');
-		error_log($ahora . ' - App/Vistas/altaUsuario.php - Vengo desde: ' . $_SERVER['HTTP_REFERER'] . "\n", 3, $ruta); 
+		//$config['ruta']='../../writeable/rsvsalon.log';
+		//$config['ahora'] = date('Y-m-d H:i:s');
+		error_log($config['ahora'] . ' - App/Vistas/altaUsuario.php - Vengo desde: ' . $_SERVER['HTTP_REFERER'] . "\n", 3, $config['ruta']); 
 
 		if (isset($_GET['cedula'])){
 			$cedula = $_GET['cedula'];
 			$_SESSION['cedula'] = $cedula;
-				error_log($ahora . ' - App/Vistas/altaUsuario.php - Cedula: ' . $cedula . "\n", 3, $ruta); 
+				error_log($config['ahora'] . ' - App/Vistas/altaUsuario.php - Cedula: ' . $cedula . "\n", 3, $config['ruta']); 
 		}
 	?>
 
@@ -96,10 +92,21 @@
         </form>
     </div>
 
-    <!-- Enlace a los scripts de JavaScript de Bootstrap (opcional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!------------------------------- -->
+    <!-- Carga de archivos JavaScript -->
+    <!------------------------------- -->
+    <!-- Librerías externas primero   -->
+    <!-- Bootstrap core JavaScript    -->
+    <!------------------------------- -->
+    <script src="/rsvsalon/js/jquery-3.7.0.min.js"></script>
+    <script src="/rsvsalon/js/bootstrap.bundle.min.js"></script>
+    <script src="/rsvsalon/js/datatables.min.js"></script>  <!-- DataTables -->
+    <script src="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    
+    <!-- Enlace a los scripts de JavaScript de Bootstrap (opcional) 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	-->
 </body>
 </html>
 

@@ -39,26 +39,31 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
+    <!------------------------------- -->
+    <!-- Carga de archivos JavaScript -->
+    <!------------------------------- -->
+    <!-- Librerías externas primero   -->
+    <!-- Bootstrap core JavaScript    -->
+    <!------------------------------- -->
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
+    <script src="js/datatables.min.js"></script>  <!-- DataTables -->
     <!-- Core plugin JavaScript
     <script src="js/jquery.easing.min.js"></script>
-	-->
-	
+    -->
+    
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.js"></script>
-
+    
     <!-- Page level plugins -->
-	<script type="module" src="js/chart.min.js"></script>
-	
-
+    <script type="module" src="js/chart.min.js"></script>
+    
+    
     <!-- Page level custom scripts 
     <script src="js/demo/chart-pie-demo.js"></script>
-	-->
-	<script src="js/chart-area-demo.js"></script>
+    -->
+    <script src="js/chart-area-demo.js"></script>
 
 </body>
 </html>

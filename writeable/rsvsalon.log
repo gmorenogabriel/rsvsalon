@@ -1,68 +1,57 @@
-inicio.php - linea 32 
-2025-02-21 10:55:33 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:55:33 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:55:33 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:56:24 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:56:24 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:56:24 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='6018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:56:25 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:56:25 - App/Vistas/altaUsuario.php - Cedula: 6018019390
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: cedula Valor: 6018019390
-2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: usuario Valor: 4rr
-2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: correo Valor: 4r@gmail.com
-2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: telefono Valor: 23114146
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - cedula: 6018019390
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - nombre: 4rr
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - correo: 4r@gmail.com
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - telefono: 23114146
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-21 10:56:41 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=6018019390
-2025-02-21 10:56:41 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 6018019390
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('6018019390',  '6018019390','4rr','4r@gmail.com',     'COMUN', null,    '1',   '2025-02-21 10:56:41',       null,       null);
-2025-02-21 10:56:41 - 6018019390 - 4rr
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Volvemos a index.php.
-2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Cerramos las conexiones. \n2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Volvemos a index.php.
-2025-02-21 10:58:46 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:58:46 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:58:46 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:59:02 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:59:02 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:59:02 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:59:03 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:59:03 - App/Vistas/altaUsuario.php - Cedula: 8018019390
-inicio.php - linea 32 
-2025-02-21 10:59:24 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:59:24 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:59:24 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:59:37 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:59:37 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-2025-02-21 10:59:37 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 10:59:49 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 10:59:49 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 10:59:49 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018091939'; - Linea 13 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-21 11:00:16 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 11:00:16 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 11:00:16 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 11:00:17 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 11:00:17 - App/Vistas/altaUsuario.php - Cedula: 8018019390
-2025-02-21 11:00:42 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 11:00:42 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 11:00:42 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018091939'; - Linea 13 
-inicio.php - linea 32 
-2025-02-21 11:00:43 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 11:00:43 - App/Vistas/altaUsuario.php - Cedula: 5018091939
-2025-02-21 11:01:06 - comprobarcedulaNew.php - Linea 9 
-2025-02-21 11:01:06 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-21 11:01:06 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018019390'; - Linea 13 
-inicio.php - linea 32 
+2025-02-21 19:59:31 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 19:59:31 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 19:59:31 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
+2025-02-21 20:13:28 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 20:13:28 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 20:13:28 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8844668899'; - Linea 13 
+2025-02-21 21:50:56 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 21:50:56 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 21:50:56 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 21:51:19 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 21:51:19 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 21:51:19 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 21:52:05 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 21:52:05 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 21:52:05 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 22:01:06 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:01:06 - comprobarcedulaNew.php - Vengo desde: 
+2025-02-21 22:01:06 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci=''; - Linea 13 
+inicio.php - linea 37 
+inicio.php - linea 37 
+inicio.php - linea 37 
+2025-02-21 22:16:03 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:16:03 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 22:16:03 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 22:29:16 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:29:16 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 22:29:16 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 22:32:01 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:32:01 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 22:32:01 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 22:34:42 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:34:42 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 22:34:42 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 22:35:04 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:35:04 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 22:35:04 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457299'; - Linea 13 
+2025-02-21 22:52:41 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 22:52:41 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 22:52:41 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457888'; - Linea 13 
+2025-02-21 23:02:49 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 23:02:49 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 23:02:49 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457288'; - Linea 13 
+2025-02-21 23:24:05 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 23:24:05 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 23:24:05 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-21 23:24:56 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 23:24:56 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 23:24:56 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1010909050'; - Linea 13 
+2025-02-21 23:27:14 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 23:27:14 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 23:27:14 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457277'; - Linea 13 
+2025-02-21 23:45:35 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 23:45:35 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-21 23:45:35 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
+2025-02-22 00:03:43 - comprobarcedulaNew.php - Linea 9 
+2025-02-22 00:03:43 - comprobarcedulaNew.php - Vengo desde: http://192.168.1.48:8084/
+2025-02-22 00:03:43 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 

@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="public/css/login.css">
-    <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="public/js/ValidarUsuario.js"></script>
 
 <?php 
 	include('App/conexion/dbConfig.php'); 
@@ -24,13 +20,15 @@
 <body>
 <img src="./public/img/hospital.jpg" >
 <div class="form-login-cabecera">
+<?php
+	$config = include('App/conexion/rutaLog.php'); // Cargar configuración
+	error_log($config['ahora'] . " - inicio.php" . " - linea 32 \n", 3, $config['ruta']);
+?>
+
 <form class='form' action="">
     <h2 class="form-header">Login</h2>
     <div class="form-login">
-<?php
-	$ruta='./writeable/rsvsalon.log';
-	error_log('inicio.php' . " - linea 32 \n", 3, $ruta);
-?>
+
         <label for="cedula">Cedula</label>
         <input type="text" id='cedula' placeholder="ingresa tu cedula" autofocus>
     </div>
@@ -72,6 +70,9 @@
             </div>
         </div>
     </div>
+	<?php 
+		error_log($config['ahora'] . ' - inicio.php' . " - linea 77 \n", 3, $config['ruta']);
+	?>
 <script>
 $(document).ready(function(){
     $('#modelId').modal({
@@ -95,7 +96,7 @@ $(document).ready(function(){
             });
         } else {
             $.ajax({
-                url: "./App/Controladores/comprobarcedulaNew.php",
+                url: "http://localhost:8084/rsvsalon/App/Controladores/comprobarcedulaNew.php",
                 type: "POST",
                 data: { cedula: cedula },
                 success: function(respuesta){
@@ -113,9 +114,10 @@ $(document).ready(function(){
                         alert("Respuesta inesperada: " + respuesta);
                     }
                 },
-                error: function(err){
-                    alert(err.statusText);    
-                }
+				error: function(xhr, status, error) {
+					console.error("Error en AJAX:", error);
+					alert("Error al conectar con el servidor.");
+				}
             });
         }
     });
@@ -130,9 +132,22 @@ $(document).ready(function () {
 });
 */
 </script>
-
+    <!------------------------------- -->
+    <!-- Carga de archivos JavaScript -->
+    <!------------------------------- -->
+    <!-- Librerías externas primero   -->
+    <!-- Bootstrap core JavaScript    -->
+    <!------------------------------- -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
+    <script src="js/datatables.min.js"></script>  <!-- DataTables -->
+    <script src="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+    <!--     <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script> -->
+	<script src="/srvsalon/public/assets/fontawesome/js/0273d57df4.js crossorigin="anonymous"></script>
+    <script src="/rsvsalonpublic/js/ValidarUsuario.js"></script>
+	
 </body>
 </html>
-
-
-
