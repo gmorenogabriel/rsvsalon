@@ -70,8 +70,10 @@
         <i class="fas fa-arrow-left"></i> Volver Atrás
     </button>
 
-    <a href="http://localhost:8084/codexworld/" class="btn btn-primary">
-        <i class="fas fa-calendar-check"></i> Reservar
+    
+<!--	<a href="http://localhost:8084/codexworld/" class="btn btn-primary"> -->
+    <a href="../App/Controladores/calendario.php" class="btn btn-primary">
+		<i class="fas fa-calendar-check"></i> Reservar
     </a>
 </div>
 

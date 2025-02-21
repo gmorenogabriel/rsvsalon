@@ -1,248 +1,68 @@
-2025-02-20 21:04:10 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:04:10 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:04:10 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='2222233333'; - Linea 13 
-2025-02-20 21:04:10 - comprobarcedulaNew.php - Retorna NOEXISTE 
+inicio.php - linea 32 
+2025-02-21 10:55:33 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:55:33 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:55:33 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:56:24 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:56:24 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:56:24 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='6018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:56:25 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:56:25 - App/Vistas/altaUsuario.php - Cedula: 6018019390
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Metodo: POST
+2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: cedula Valor: 6018019390
+2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: usuario Valor: 4rr
+2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: correo Valor: 4r@gmail.com
+2025-02-21 10:56:41 - App\Vista\altaUsuario.php - Campo: telefono Valor: 23114146
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - cedula: 6018019390
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - nombre: 4rr
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - correo: 4r@gmail.com
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - telefono: 23114146
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
+2025-02-21 10:56:41 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=6018019390
+2025-02-21 10:56:41 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 6018019390
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+							   values('6018019390',  '6018019390','4rr','4r@gmail.com',     'COMUN', null,    '1',   '2025-02-21 10:56:41',       null,       null);
+2025-02-21 10:56:41 - 6018019390 - 4rr
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Volvemos a index.php.
+2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Cerramos las conexiones. \n2025-02-21 10:56:41 - Controladores\altaUsuario.php.php - Volvemos a index.php.
+2025-02-21 10:58:46 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:58:46 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:58:46 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:59:02 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:59:02 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:59:02 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:59:03 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:59:03 - App/Vistas/altaUsuario.php - Cedula: 8018019390
+inicio.php - linea 32 
+2025-02-21 10:59:24 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:59:24 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:59:24 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:59:37 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:59:37 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
+2025-02-21 10:59:37 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
+inicio.php - linea 32 
+2025-02-21 10:59:49 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 10:59:49 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 10:59:49 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018091939'; - Linea 13 
 inicio.php - linea 32 
 inicio.php - linea 32 
+2025-02-21 11:00:16 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 11:00:16 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 11:00:16 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='8018019390'; - Linea 13 
 inicio.php - linea 32 
+2025-02-21 11:00:17 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 11:00:17 - App/Vistas/altaUsuario.php - Cedula: 8018019390
+2025-02-21 11:00:42 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 11:00:42 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 11:00:42 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018091939'; - Linea 13 
 inicio.php - linea 32 
+2025-02-21 11:00:43 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 11:00:43 - App/Vistas/altaUsuario.php - Cedula: 5018091939
+2025-02-21 11:01:06 - comprobarcedulaNew.php - Linea 9 
+2025-02-21 11:01:06 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
+2025-02-21 11:01:06 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018019390'; - Linea 13 
 inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:13:54 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:13:54 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:13:54 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-2025-02-20 21:13:54 - comprobarcedulaNew.php - Retorna NOEXISTE 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:16:55 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:16:55 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:16:55 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-2025-02-20 21:16:55 - comprobarcedulaNew.php - Retorna NOEXISTE 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:19:07 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:19:07 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:19:07 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4418019390'; - Linea 13 
-2025-02-20 21:19:07 - comprobarcedulaNew.php - Retorna NOEXISTE 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:22:46 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:22:46 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php
-inicio.php - linea 32 
-2025-02-20 21:22:46 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1818019390'; - Linea 13 
-2025-02-20 21:22:46 - comprobarcedulaNew.php - Retorna NOEXISTE 
-2025-02-20 21:23:00 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:23:00 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:23:00 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
-2025-02-20 21:23:00 - comprobarcedulaNew.php - Row: Array - Linea 9 
-2025-02-20 21:23:00 - comprobarcedulaNew.php - Retorna EXISTE 
-inicio.php - linea 32 
-2025-02-20 21:23:07 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:23:07 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:23:07 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
-2025-02-20 21:23:07 - comprobarcedulaNew.php - Row: Array - Linea 9 
-2025-02-20 21:23:07 - comprobarcedulaNew.php - Retorna EXISTE 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:24:33 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:24:33 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:24:33 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1015457214'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 21:24:43 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:24:43 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:24:43 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 21:27:47 - Controladores\altaUsuario.php.php - Metodo: GET
-2025-02-20 21:27:47 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1018019390
-2025-02-20 21:27:47 - Controladores\altaUsuario.php.php - Campo: ced NO esta cargado. 
-2025-02-20 21:27:47 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 21:27:47 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:29:22 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:29:22 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:29:22 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:30:37 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:30:37 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:30:37 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-inicio.php - linea 32 
- - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
- - App/Vistas/altaUsuario.php - Cedula: 1018019390
-inicio.php - linea 32 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 21:33:41 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 21:33:41 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:33:41 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='1018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 21:33:42 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:33:42 - App/Vistas/altaUsuario.php - Cedula: 1018019390
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 21:33:57 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1018019390
-2025-02-20 21:33:57 - App\Vista\altaUsuario.php - Campo: usuario Valor: MR
-2025-02-20 21:33:57 - App\Vista\altaUsuario.php - Campo: correo Valor: mr@gmail.com
-2025-02-20 21:33:57 - App\Vista\altaUsuario.php - Campo: telefono Valor: 29019667
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - cedula: 1018019390
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - nombre: MR
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - correo: mr@gmail.com
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - telefono: 29019667
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 21:33:57 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=1018019390
-2025-02-20 21:33:57 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('1018019390',  '1018019390','MR','mr@gmail.com',     'COMUN', null,    '1',   '2025-02-20 21:33:57',       null,       null);
-2025-02-20 21:33:57 -  - 
-2025-02-20 21:33:57 - Controladores\altaUsuario.php.php - Volvemos a index.php al Modal #modelId a cargar Cedula, Nombre, Correo, Telefono.
-2025-02-20 21:37:52 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 21:37:52 - App/Vistas/altaUsuario.php - Cedula: 1018019390
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:42:12 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1018019390
-2025-02-20 23:42:12 - App\Vista\altaUsuario.php - Campo: usuario Valor: MR
-2025-02-20 23:42:12 - App\Vista\altaUsuario.php - Campo: correo Valor: mr@gmail.com
-2025-02-20 23:42:12 - App\Vista\altaUsuario.php - Campo: telefono Valor: 29019667
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - cedula: 1018019390
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - nombre: MR
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - correo: mr@gmail.com
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - telefono: 29019667
-2025-02-20 23:42:12 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:42:12 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=1018019390
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 23:44:56 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:44:56 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:44:56 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='2018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 23:44:57 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:44:57 - App/Vistas/altaUsuario.php - Cedula: 2018019390
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:48:20 - App\Vista\altaUsuario.php - Campo: cedula Valor: 2018019390
-2025-02-20 23:48:20 - App\Vista\altaUsuario.php - Campo: usuario Valor: MRR
-2025-02-20 23:48:20 - App\Vista\altaUsuario.php - Campo: correo Valor: mrr@gmail.com
-2025-02-20 23:48:20 - App\Vista\altaUsuario.php - Campo: telefono Valor: 23114145
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - cedula: 2018019390
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - nombre: MRR
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - correo: mrr@gmail.com
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - telefono: 23114145
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:48:20 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=2018019390
-2025-02-20 23:48:20 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 2018019390
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('2018019390',  '2018019390','MRR','mrr@gmail.com',     'COMUN', null,    '1',   '2025-02-20 23:48:20',       null,       null);
-2025-02-20 23:48:20 - 2018019390 - MRR
-2025-02-20 23:48:20 - Controladores\altaUsuario.php.php - Volvemos a index.php al Modal modelId a cargar Cedula, Nombre, Correo, Telefono.
-inicio.php - linea 32 
-2025-02-20 23:49:06 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:49:06 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:49:06 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='2018019390'; - Linea 13 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 23:49:14 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:49:14 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:49:14 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='2018019390'; - Linea 13 
-inicio.php - linea 32 
-inicio.php - linea 32 
-2025-02-20 23:49:22 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:49:22 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:49:22 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='3018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 23:49:23 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:49:23 - App/Vistas/altaUsuario.php - Cedula: 3018019390
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:49:44 - App\Vista\altaUsuario.php - Campo: cedula Valor: 3018019390
-2025-02-20 23:49:44 - App\Vista\altaUsuario.php - Campo: usuario Valor: mrrr
-2025-02-20 23:49:44 - App\Vista\altaUsuario.php - Campo: correo Valor: mrrr@gmail.com
-2025-02-20 23:49:44 - App\Vista\altaUsuario.php - Campo: telefono Valor: 290133333
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - cedula: 3018019390
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - nombre: mrrr
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - correo: mrrr@gmail.com
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - telefono: 290133333
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:49:44 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=3018019390
-2025-02-20 23:49:44 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 3018019390
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('3018019390',  '3018019390','mrrr','mrrr@gmail.com',     'COMUN', null,    '1',   '2025-02-20 23:49:44',       null,       null);
-2025-02-20 23:49:44 - 3018019390 - mrrr
-2025-02-20 23:49:44 - Controladores\altaUsuario.php.php - Volvemos a index.php al Modal modelId a cargar Cedula, Nombre, Correo, Telefono.
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:50:47 - App\Vista\altaUsuario.php - Campo: cedula Valor: 3018019390
-2025-02-20 23:50:47 - App\Vista\altaUsuario.php - Campo: usuario Valor: mrrr
-2025-02-20 23:50:47 - App\Vista\altaUsuario.php - Campo: correo Valor: mrrr@gmail.com
-2025-02-20 23:50:47 - App\Vista\altaUsuario.php - Campo: telefono Valor: 290133333
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - cedula: 3018019390
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - nombre: mrrr
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - correo: mrrr@gmail.com
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - telefono: 290133333
-2025-02-20 23:50:47 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:50:47 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=3018019390
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:50:54 - App\Vista\altaUsuario.php - Campo: cedula Valor: 3018019390
-2025-02-20 23:50:54 - App\Vista\altaUsuario.php - Campo: usuario Valor: mrrr
-2025-02-20 23:50:54 - App\Vista\altaUsuario.php - Campo: correo Valor: mrrr@gmail.com
-2025-02-20 23:50:54 - App\Vista\altaUsuario.php - Campo: telefono Valor: 290133333
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - cedula: 3018019390
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - nombre: mrrr
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - correo: mrrr@gmail.com
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - telefono: 290133333
-2025-02-20 23:50:54 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:50:54 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=3018019390
-inicio.php - linea 32 
-2025-02-20 23:53:07 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:53:07 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:53:07 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='4018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 23:53:07 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:53:07 - App/Vistas/altaUsuario.php - Cedula: 4018019390
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:53:22 - App\Vista\altaUsuario.php - Campo: cedula Valor: 4018019390
-2025-02-20 23:53:22 - App\Vista\altaUsuario.php - Campo: usuario Valor: 4errr
-2025-02-20 23:53:22 - App\Vista\altaUsuario.php - Campo: correo Valor: 444@gmail.com
-2025-02-20 23:53:22 - App\Vista\altaUsuario.php - Campo: telefono Valor: 29999999
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - cedula: 4018019390
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - nombre: 4errr
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - correo: 444@gmail.com
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - telefono: 29999999
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:53:22 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=4018019390
-2025-02-20 23:53:22 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 4018019390
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('4018019390',  '4018019390','4errr','444@gmail.com',     'COMUN', null,    '1',   '2025-02-20 23:53:22',       null,       null);
-2025-02-20 23:53:22 - 4018019390 - 4errr
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - Volvemos a index.php.
-2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - Cerramos las conexiones. \n2025-02-20 23:53:22 - Controladores\altaUsuario.php.php - Volvemos a index.php.
-2025-02-20 23:53:38 - comprobarcedulaNew.php - Linea 9 
-2025-02-20 23:53:38 - comprobarcedulaNew.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:53:38 - comprobarcedulaNew.php - Ejecutamos la consulta de usuarios: SELECT ci, nombre, email FROM usuarios WHERE ci='5018019390'; - Linea 13 
-inicio.php - linea 32 
-2025-02-20 23:53:39 - App/Vistas/altaUsuario.php - Vengo desde: http://localhost:8084/rsvsalon/inicio.php?
-2025-02-20 23:53:39 - App/Vistas/altaUsuario.php - Cedula: 5018019390
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - Metodo: POST
-2025-02-20 23:53:58 - App\Vista\altaUsuario.php - Campo: cedula Valor: 5018019390
-2025-02-20 23:53:58 - App\Vista\altaUsuario.php - Campo: usuario Valor: Cincola
-2025-02-20 23:53:58 - App\Vista\altaUsuario.php - Campo: correo Valor: correo@gmail.com
-2025-02-20 23:53:58 - App\Vista\altaUsuario.php - Campo: telefono Valor: 2314145
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - cedula: 5018019390
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - nombre: Cincola
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - correo: correo@gmail.com
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - telefono: 2314145
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - Nombre no vino seteado - Linea 25
-2025-02-20 23:53:58 - Controladores\altaUsuario.PHP - Select Usuarios: SELECT ci from usuarios where ci=5018019390
-2025-02-20 23:53:58 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 5018019390
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - INSERT into Usuarios (ci,password,   nombre,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
-							   values('5018019390',  '5018019390','Cincola','correo@gmail.com',     'COMUN', null,    '1',   '2025-02-20 23:53:58',       null,       null);
-2025-02-20 23:53:58 - 5018019390 - Cincola
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - Volvemos a index.php.
-2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - Cerramos las conexiones. \n2025-02-20 23:53:58 - Controladores\altaUsuario.php.php - Volvemos a index.php.

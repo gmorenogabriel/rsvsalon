@@ -1,9 +1,9 @@
-# En la pagina de Git una vez creado el Proyecto se debe copiar
+gi# En la pagina de Git una vez creado el Proyecto se debe copiar
 # la direccion que que nos otorga Git similar a "https://github.com/jhsoft8705/Mi-pagi..."
 
 git init 
 git add . 
-git commit -m "PDV - Codeigniter 4 v.4.6.0 y PHP 8.3.15 con Mysql"  
+git commit -m "RSVSALON - Codeigniter 4 v.4.6.0 y PHP 8.3.15 con Mysql"  
 git remote add origin git@github.com:gmorenogabriel/rsvsalon.git
 git push origin main  
 

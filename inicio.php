@@ -107,7 +107,8 @@ $(document).ready(function(){
                         alert('NO EXISTE');
                         // Verifica si la URL está bien formateada
                         console.log("Redirigiendo a: " + "http://localhost:8084/rsvsalon/App/Vistas/altaUsuario.php?cedula=" + cedula);
-                        window.location.href = "http://localhost:8084/rsvsalon/App/Vistas/altaUsuario.php?cedula=" + cedula;
+                       //$('#modelId').modal('show');
+					   window.location.href = "http://localhost:8084/rsvsalon/App/Vistas/altaUsuario.php?cedula=" + cedula;
                     } else {
                         alert("Respuesta inesperada: " + respuesta);
                     }
