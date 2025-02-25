@@ -1,0 +1,141 @@
+2025-02-24 22:56:28 - guardar_evento.php - linea 3 
+2025-02-24 22:56:28 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 22:56:28 - guardar_evento.php - try - Ingrese. 
+2025-02-24 22:57:07 - guardar_evento.php - linea 3 
+2025-02-24 22:57:07 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 22:57:07 - guardar_evento.php - try - Ingrese. 
+2025-02-24 22:58:38 - guardar_evento.php - linea 3 
+2025-02-24 22:58:38 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 22:58:38 - guardar_evento.php - try - Ingrese. 
+2025-02-24 22:59:26 - guardar_evento.php - linea 3 
+2025-02-24 22:59:26 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 22:59:26 - guardar_evento.php - try - Ingrese. 
+2025-02-24 22:59:38 - guardar_evento.php - linea 3 
+2025-02-24 22:59:38 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 22:59:38 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:00:44 - guardar_evento.php - linea 3 
+2025-02-24 23:00:44 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:00:44 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:07:59 - guardar_evento.php - linea 3 
+2025-02-24 23:07:59 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:07:59 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:08:17 - guardar_evento.php - linea 3 
+2025-02-24 23:08:17 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:08:17 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:08:17 - guardar_evento.php - hora_Minuto_Start H:i : 13:00 
+2025-02-24 23:08:17 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1300', '13', '1', 'id1300', '', '', '2025-02-24 13:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:09:00 - guardar_evento.php - linea 3 
+2025-02-24 23:09:00 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:09:00 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:09:00 - guardar_evento.php - hora_Minuto_Start H:i : 14:00 
+2025-02-24 23:09:00 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1400', '14', '14', 'id1400', '', '', '2025-02-24 14:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:13:01 - guardar_evento.php - linea 3 
+2025-02-24 23:13:01 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:13:01 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:13:01 - guardar_evento.php - hora_Minuto_Start H:i : 13:00 
+2025-02-24 23:13:01 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('13Cedula', 'GMO', '13', 'id13', '', '', '2025-02-23 13:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:14:05 - guardar_evento.php - linea 3 
+2025-02-24 23:14:05 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:14:05 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:14:05 - guardar_evento.php - hora_Minuto_Start H:i : 20:00 
+2025-02-24 23:14:05 - guardar_evento.php Nocturno - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('20Cedula', 'GMO20', '20', 'id20', '', '', '2025-02-23 20:00:00', '2025-02-24 23:59:00') 
+2025-02-24 23:16:03 - guardar_evento.php - linea 3 
+2025-02-24 23:16:03 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:16:03 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:16:03 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:16:03 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1400', '1400Gmo', '1400', 'id14', '', '', '2025-02-25 11:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:17:51 - guardar_evento.php - linea 3 
+2025-02-24 23:17:51 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:17:51 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:17:51 - guardar_evento.php - hora_Minuto_Start H:i : 19:00 
+2025-02-24 23:17:51 - guardar_evento.php Nocturno - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('101545721420', '20GMO', '2098', 'id2000', '', '', '2025-02-23 19:00:00', '2025-02-24 23:59:00') 
+2025-02-24 23:18:42 - guardar_evento.php - linea 3 
+2025-02-24 23:18:42 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:18:42 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:18:42 - guardar_evento.php - hora_Minuto_Start H:i : 19:00 
+2025-02-24 23:18:42 - guardar_evento.php Nocturno - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'Walter Pico', '098986068', 'id2000', '', '', '2025-02-23 19:00:00', '2025-02-24 23:59:00') 
+2025-02-24 23:21:08 - guardar_evento.php - linea 3 
+2025-02-24 23:21:08 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:21:08 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:21:08 - guardar_evento.php - hora_Minuto_Start H:i : 19:00 
+2025-02-24 23:21:08 - guardar_evento.php Nocturno - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'GMORENO', '099103769', 'id99', '', '', '2025-02-26 19:00:00', '2025-02-24 23:59:00') 
+2025-02-24 23:22:59 - guardar_evento.php - linea 3 
+2025-02-24 23:22:59 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:22:59 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:22:59 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:22:59 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('10154572141200', 'GMORENO_1200', '012', 'id012', '', '', '2025-02-27 11:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:23:54 - guardar_evento.php - linea 3 
+2025-02-24 23:23:54 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:23:54 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:23:54 - guardar_evento.php - hora_Minuto_Start H:i : 19:00 
+2025-02-24 23:23:54 - guardar_evento.php Nocturno - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('10154572142000', 'GMORENO_2000', '0992020', 'id020', '', '', '2025-02-27 19:00:00', '2025-02-24 23:59:00') 
+2025-02-24 23:41:32 - guardar_evento.php - linea 3 
+2025-02-24 23:41:32 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:41:32 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:41:32 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:41:32 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'Gabriel', '099', 'mi Evento personal', '', '', '2025-02-23 11:00:00', '2025-02-24 17:00:00') 
+2025-02-24 23:44:00 - guardar_evento.php - linea 3 
+2025-02-24 23:44:00 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:44:00 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:44:00 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:44:00 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'Gabriel', '099', 'mi Evento personal', '', '', '2025-02-24 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:44:15 - guardar_evento.php - linea 3 
+2025-02-24 23:44:15 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:44:15 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:44:15 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:44:15 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'pepe', 'nan', 'cumple', '', '', '2025-02-23 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:47:52 - guardar_evento.php - linea 3 
+2025-02-24 23:47:52 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:47:52 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:47:52 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:47:52 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'GMo', '099103769', 'Titulo', '', '', '2025-02-24 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:52:56 - guardar_evento.php - linea 3 
+2025-02-24 23:52:56 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:52:56 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:52:56 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:52:56 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('11111111', 'La Reina Isabel', '099 103 769', 'Cumpleañeros', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:52:59 - guardar_evento.php - linea 3 
+2025-02-24 23:52:59 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:52:59 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:52:59 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:52:59 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('11111111', 'La Reina Isabel', '099 103 769', 'Cumpleañeros', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:53:01 - guardar_evento.php - linea 3 
+2025-02-24 23:53:01 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:53:01 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:53:01 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:53:01 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('11111111', 'La Reina Isabel', '099 103 769', 'Cumpleañeros', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:53:15 - guardar_evento.php - linea 3 
+2025-02-24 23:53:15 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:53:15 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:53:15 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:53:15 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('11111111', 'La Reina Isabel', '099 103 769', 'Cumpleañeros', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:57:09 - guardar_evento.php - linea 3 
+2025-02-24 23:57:09 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:57:09 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:57:09 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:57:09 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'Nombre Pepitito', '099103769', 'id 23 feb', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 
+2025-02-24 23:57:13 - guardar_evento.php - linea 3 
+2025-02-24 23:57:13 - guardar_evento.php - Hay conexion a la BD. 
+2025-02-24 23:57:13 - guardar_evento.php - try - Ingrese. 
+2025-02-24 23:57:13 - guardar_evento.php - hora_Minuto_Start H:i : 11:00 
+2025-02-24 23:57:13 - guardar_evento.php Matutino - Sql : INSERT INTO events (ci, nombre, celular, title, description, url, start, end)
+            VALUES ('1015457214', 'Nombre Pepitito', '099103769', 'id 23 feb', '', '', '2025-02-25 11:00:00', '2025-02-24 16:59:00') 

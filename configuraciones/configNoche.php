@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -15,6 +14,7 @@
 	</style>	
    <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+	
 	<link href="../css/datatables.min.css" rel="stylesheet" >
 	<link href="../public/assets/fontawesome/css/all.min.css" rel="stylesheet" >
 	<link href="../public/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" >
@@ -24,28 +24,22 @@
 			<main>
 				<div class="container-fluid">
 				<br/>
-          <div class="row">
-			  
-			  <div class="col-8">
-                                <div class="card bg-info text-white mb-4">
-                                   <!--  <div class="card-body"> Solicitud Reserva al Mediodía:</div> -->
-                                    <div class="card-footer d-flex align-items-center justify-content-between">                                        
-										<!-- <a class="small text-black stretched-link" href='configuraciones/configMediodia.php'> Ver Detalles</a> -->
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-<!--                                </div>
-                             </div>
-							 -->
-				
-<h2>Consideraciones de la Solicitud de Reserva noctura:</h2>
-	<ul class="custom-list">
-		<li>El horario disponible al Noche corresponde desde las 19:00 a las 23:59.</li>
-		<li>La cantidad máxima de personas en el Salón es de 20 personas.</li>
-		<li>El costo del Salón es de <strong>$U 2.500,00</strong></li>
-	</ul>
-<h3> 3-Pasos a seguir para confirmar la reserva:</h3>	
-<br/>
-	
+          <div class="row">			  
+	<div class="col-12">
+<!--		<div class="card bg-info text-white mb-4"> -->
+		<div class="card bg-primary text-white mb-4">
+
+	    <h3 class="text-center"><div class="card-body fs-5">Solicitud Reserva:</div></h3> 
+			<h4 class="fs-5">Consideraciones:</h4>
+				<div class="custom-list fs-6">
+					<li>El horario disponible al Noche corresponde desde las 19:00 a las 23:59.</li>
+					<li>La cantidad máxima de personas en el Salón es de 20 personas.</li>
+					<li>El costo del Salón es de <strong>$U 2.500,00</strong></li>
+				</div>
+				<br/>
+			<h5 class="fs-5">3-Pasos a seguir para confirmar la reserva:</h5>				
+			<br/>
+			
 	<ul class="custom-list">
 	<p><i class="fas fa-check-circle"></i> 1-Luego de realizada la solicitud, tiene dos opciones para abonar la seña en:</p>
 		   <li>Abitab - Cuenta 272348400</li>

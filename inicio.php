@@ -73,6 +73,22 @@
 	<?php 
 		error_log($config['ahora'] . ' - inicio.php' . " - linea 77 \n", 3, $config['ruta']);
 	?>
+    <!------------------------------- -->
+    <!-- Carga de archivos JavaScript -->
+    <!------------------------------- -->
+    <!-- Librerías externas primero   -->
+    <!-- Bootstrap core JavaScript    -->
+    <!------------------------------- -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
+    <script src="js/datatables.min.js"></script>  <!-- DataTables -->
+    <script src="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+    <!--     <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script> -->
+	<script src="/rsvsalon/public/assets/fontawesome/js/0273d57df4.js" crossorigin="anonymous"></script>
+    <script src="/rsvsalon/public/js/ValidarUsuario.js"></script>	
 <script>
 $(document).ready(function(){
     $('#modelId').modal({
@@ -96,20 +112,20 @@ $(document).ready(function(){
             });
         } else {
             $.ajax({
-                url: "http://localhost:8084/rsvsalon/App/Controladores/comprobarcedulaNew.php",
+                url: "./App/Controladores/comprobarcedulaNew.php",
                 type: "POST",
                 data: { cedula: cedula },
                 success: function(respuesta){
                     console.log("Respuesta del servidor: " + respuesta); // Verifica la respuesta
 
                     if (respuesta == "EXISTE") {
-                        window.location.href = "http://localhost:8084/rsvsalon/solicitudReserva1.php";
+                        window.location.href = "./solicitudReserva1.php";
                     } else if (respuesta == "NOEXISTE") {
                         alert('NO EXISTE');
                         // Verifica si la URL está bien formateada
-                        console.log("Redirigiendo a: " + "http://localhost:8084/rsvsalon/App/Vistas/altaUsuario.php?cedula=" + cedula);
+                        console.log("Redirigiendo a: " + "./App/Vistas/altaUsuario.php?cedula=" + cedula);
                        //$('#modelId').modal('show');
-					   window.location.href = "http://localhost:8084/rsvsalon/App/Vistas/altaUsuario.php?cedula=" + cedula;
+					   window.location.href = "./App/Vistas/altaUsuario.php?cedula=" + cedula;
                     } else {
                         alert("Respuesta inesperada: " + respuesta);
                     }
@@ -123,8 +139,6 @@ $(document).ready(function(){
     });
 });
 
-
-
 /*
 $(document).ready(function () {
     // Muestra el modal
@@ -132,22 +146,7 @@ $(document).ready(function () {
 });
 */
 </script>
-    <!------------------------------- -->
-    <!-- Carga de archivos JavaScript -->
-    <!------------------------------- -->
-    <!-- Librerías externas primero   -->
-    <!-- Bootstrap core JavaScript    -->
-    <!------------------------------- -->
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
-    <script src="js/datatables.min.js"></script>  <!-- DataTables -->
-    <script src="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.js"></script>
-    
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.js"></script>
-    <!--     <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script> -->
-	<script src="/srvsalon/public/assets/fontawesome/js/0273d57df4.js crossorigin="anonymous"></script>
-    <script src="/rsvsalonpublic/js/ValidarUsuario.js"></script>
+
 	
 </body>
 </html>

@@ -92,7 +92,7 @@ if ($query1){
 			}
 			error_log($config['ahora'] . ' - Controladores\altaUsuario.php.php - Volvemos a index.php.' . "\n", 3, $config['ruta']);	
 			// Ya creamos el Usuario podemos avanzar con la Reserva
-			header("Location: http://localhost:8084/rsvsalon/solicitudReserva1.php");
+			header("Location: ./rsvsalon/solicitudReserva1.php");
 			exit(); // Asegura que el script no siga ejecutándose
 
 

@@ -46,7 +46,6 @@
     <!-- Bootstrap core JavaScript    -->
     <!------------------------------- -->
     <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
     <script src="js/datatables.min.js"></script>  <!-- DataTables -->
     <!-- Core plugin JavaScript
@@ -61,9 +60,9 @@
     
     
     <!-- Page level custom scripts 
-    <script src="js/demo/chart-pie-demo.js"></script>
-    -->
+    <script src="js/demo/chart-pie-demo.js"></script>    
     <script src="js/chart-area-demo.js"></script>
+	-->
 
 </body>
 </html>

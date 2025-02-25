@@ -23,6 +23,10 @@
 
 -->
 <script>
+document.addEventListener('touchmove', function (event) {
+    // Código que maneja el evento
+}, { passive: true });
+
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
 
@@ -40,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		selectAllow: function(selectInfo) {
 			return selectInfo.start >= new Date(); // Evita seleccionar fechas pasadas
 		},
-
+/*
 		dayCellDidMount: function(info) {
 		var cellDate = new Date(info.date);
 		cellDate.setHours(0, 0, 0, 0); // Normalizar
@@ -50,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				info.el.style.opacity = "0.5"; // Reducir opacidad
 			}
 		},
+*/
     select: async function (start, end, allDay) {
       const { value: formValues } = await Swal.fire({
         title: 'Add Event',
@@ -57,12 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
         showCloseButton: true,
 		    showCancelButton: true,
         html:
+		  '<input id="swalEvtCedula" class="swal2-input" placeholder="Ingrese Cédula">' +
           '<input id="swalEvtTitle" class="swal2-input" placeholder="Enter title">' +
           '<textarea id="swalEvtDesc" class="swal2-input" placeholder="Enter description"></textarea>' +
           '<input id="swalEvtURL" class="swal2-input" placeholder="Enter URL">',
         focusConfirm: false,
         preConfirm: () => {
           return [
+		    document.getElementById('swalEvtCedula').value,
             document.getElementById('swalEvtTitle').value,
             document.getElementById('swalEvtDesc').value,
             document.getElementById('swalEvtURL').value
