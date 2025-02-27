@@ -1,0 +1,181 @@
+2025-02-27 20:49:09 - inicio.php - linea 32 
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:49:09 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015458888
+2025-02-27 20:49:09 - App\Vista\altaUsuario.php - Campo: nombre Valor: UndefinedVildos
+2025-02-27 20:49:09 - App\Vista\altaUsuario.php - Campo: telefono Valor: 993333333
+2025-02-27 20:49:09 - App\Vista\altaUsuario.php - Campo: correo Valor: mvildos@us.com
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - cedula: 1015458888
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - nombre: UndefinedVildos
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - telefo: 993333333
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - correo: mvildos@us.com
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - UndefinedVildos
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - 1015458888
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015458888';
+2025-02-27 20:49:09 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:50:13 - inicio.php - linea 32 
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:50:13 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015458888
+2025-02-27 20:50:13 - App\Vista\altaUsuario.php - Campo: nombre Valor: UndefinedVildos
+2025-02-27 20:50:13 - App\Vista\altaUsuario.php - Campo: telefono Valor: 993333333
+2025-02-27 20:50:13 - App\Vista\altaUsuario.php - Campo: correo Valor: mvildos@us.com
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - cedula: 1015458888
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - nombre: UndefinedVildos
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - telefo: 993333333
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - correo: mvildos@us.com
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - UndefinedVildos
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - 1015458888
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015458888';
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:50:13 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 1015458888
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - INSERT into Usuarios (ci,     password,   nombre,  telefono,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+								values('1015458888',  '1015458888','UndefinedVildos','993333333', 'mvildos@us.com',     'COMUN', null,    '1',   '',       null,       null);
+2025-02-27 20:50:13 - 1015458888 - UndefinedVildos
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:50:13 - Controladores\altaUsuario.php - Cerramos las conexiones. \n2025-02-27 20:50:13 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:50:34 - inicio.php - linea 32 
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:50:34 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015458888
+2025-02-27 20:50:34 - App\Vista\altaUsuario.php - Campo: nombre Valor: UndefinedVildos
+2025-02-27 20:50:34 - App\Vista\altaUsuario.php - Campo: telefono Valor: 993333333
+2025-02-27 20:50:34 - App\Vista\altaUsuario.php - Campo: correo Valor: mvildos@us.com
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - cedula: 1015458888
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - nombre: UndefinedVildos
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - telefo: 993333333
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - correo: mvildos@us.com
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - UndefinedVildos
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - 1015458888
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015458888';
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:50:34 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 1015458888
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - INSERT into Usuarios (ci,     password,   nombre,  telefono,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+								values('1015458888',  '1015458888','UndefinedVildos','993333333', 'mvildos@us.com',     'COMUN', null,    '1',   '',       null,       null);
+2025-02-27 20:50:34 - 1015458888 - UndefinedVildos
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:50:34 - Controladores\altaUsuario.php - Cerramos las conexiones. \n2025-02-27 20:50:34 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:50:54 - inicio.php - linea 32 
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:50:54 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457777
+2025-02-27 20:50:54 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:50:54 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - cedula: 1015457777
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - telefo: 
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - 1015457777
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457777';
+2025-02-27 20:50:54 - Controladores\altaUsuario.php - Numero de Filas: 1
+2025-02-27 20:51:12 - inicio.php - linea 32 
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:51:12 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457777
+2025-02-27 20:51:12 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:51:12 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:51:12 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - cedula: 1015457777
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - 1015457777
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457777';
+2025-02-27 20:51:12 - Controladores\altaUsuario.php - Numero de Filas: 1
+2025-02-27 20:51:41 - inicio.php - linea 32 
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:51:41 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457778
+2025-02-27 20:51:41 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:51:41 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:51:41 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - cedula: 1015457778
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - 1015457778
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457778';
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:51:41 - altaUsuario.PHP - No hay registros de esa Cedula en Usuarios - No Existe: 1015457778
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - INSERT into Usuarios (ci,     password,   nombre,  telefono,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+								values('1015457778',  '1015457778','Gabrielito','333333132', 'julioverne@hotmail.com',     'COMUN', null,    '1',   '',       null,       null);
+2025-02-27 20:51:41 - 1015457778 - Gabrielito
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:51:41 - Controladores\altaUsuario.php - Cerramos las conexiones. \n2025-02-27 20:51:41 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:53:02 - inicio.php - linea 32 
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:53:02 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457779
+2025-02-27 20:53:02 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:53:02 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:53:02 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - cedula: 1015457779
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - 1015457779
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457779';
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - No Existe esa Cedula en Usuarios - La vamos a crear: 1015457779
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - INSERT into Usuarios (ci,     password,   nombre,  telefono,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+								values('1015457779',  '1015457779','Gabrielito','333333132', 'julioverne@hotmail.com',     'COMUN', null,    '1',   '',       null,       null);
+2025-02-27 20:53:02 - 1015457779 - Gabrielito
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:53:02 - Controladores\altaUsuario.php - Cerramos las conexiones. \n2025-02-27 20:53:02 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:55:59 - inicio.php - linea 32 
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:55:59 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457788
+2025-02-27 20:55:59 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:55:59 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:55:59 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - cedula: 1015457788
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - 1015457788
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457788';
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:55:59 - Controladores\altaUsuario.php - No Existe esa Cedula en Usuarios - La vamos a crear: 1015457788
+2025-02-27 20:56:39 - inicio.php - linea 32 
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:56:39 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457788
+2025-02-27 20:56:39 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:56:39 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:56:39 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - cedula: 1015457788
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - 1015457788
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457788';
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:56:39 - Controladores\altaUsuario.php - No Existe esa Cedula en Usuarios - La vamos a crear: 1015457788
+2025-02-27 20:56:52 - inicio.php - linea 32 
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - Metodo: GET
+2025-02-27 20:56:52 - App\Vista\altaUsuario.php - Campo: cedula Valor: 1015457788
+2025-02-27 20:56:52 - App\Vista\altaUsuario.php - Campo: nombre Valor: Gabrielito
+2025-02-27 20:56:52 - App\Vista\altaUsuario.php - Campo: correo Valor: julioverne@hotmail.com
+2025-02-27 20:56:52 - App\Vista\altaUsuario.php - Campo: telefono Valor: 333333132
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - cedula: 1015457788
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - nombre: Gabrielito
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - telefo: 333333132
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - correo: julioverne@hotmail.com
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - Gabrielito
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - CEDULA <> 0 
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - 1015457788
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - SELECT ci, nombre, telefono, email FROM usuarios WHERE ci='1015457788';
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - Numero de Filas: 0
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - No Existe esa Cedula en Usuarios - La vamos a crear: 1015457788
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - INSERT into Usuarios (ci,     password,   nombre,  telefono,    email, rol_usuario, pago, activo, fecha_alta, fecha_edit, fecha_baja)
+								values('1015457788',  '1015457788','Gabrielito','333333132', 'julioverne@hotmail.com',     'COMUN', null,    '1',   '',       null,       null);
+2025-02-27 20:56:52 - 1015457788 - Gabrielito
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - Volvemos a index.php.
+2025-02-27 20:56:52 - Controladores\altaUsuario.php - Cerramos las conexiones. \n2025-02-27 20:56:52 - Controladores\altaUsuario.php - Volvemos a index.php.

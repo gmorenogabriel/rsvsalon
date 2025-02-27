@@ -9,6 +9,7 @@
 
 <?php 
 	include('App/conexion/dbConfig.php'); 
+    $config = include('App/conexion/rutaLog.php'); // Cargar configuración
 ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
     <!-- CSS only -->
@@ -22,9 +23,9 @@
 <div class="form-login-cabecera">
 <?php
 	$config = include('App/conexion/rutaLog.php'); // Cargar configuración
-	error_log($config['ahora'] . " - inicio.php" . " - linea 32 \n", 3, $config['ruta']);
+	error_log($config['ahora'] . " - inicio.php" . " - linea 25 \n", 3, $config['ruta']);
 ?>
-
+<!--
 <form class='form' action="">
     <h2 class="form-header">Login</h2>
     <div class="form-login">
@@ -32,121 +33,202 @@
         <label for="cedula">Cedula</label>
         <input type="text" id='cedula' placeholder="ingresa tu cedula" autofocus>
     </div>
-	
-</form>
-</div>
 
+</form>
+-->
+</div>
+<!--
 <div id="resultado" class="resultado"></div>
 <div id="resultado2" class="resultado2"></div>
-
-<!-- Modal -->
-<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+-->
+<!-- Solo Cedula  -->
+<!-- Modal para Capturar Datos -->
+<div class="modal fade" id="eventCedula" tabindex="-1" aria-labelledby="eventModalCedula" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
-                <div class="modal-header">
-                        <h5 class="modal-title">Registro de Usuario</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventModalCedula">Ingreso de Cedula de Identidad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="eventFormCedula">
+                    <input type="hidden" id="start">
+                    <input type="hidden" id="end">
+
+                    <div class="mb-3">
+                        <label for="cedula" class="form-label">Nro. Cédula</label>
+                        <input type="text" class="form-control" id="cedula" required>
                     </div>
-    <div class="modal-body">
-     <div class="container-fluid">
- 		<label for="cedula">Cedula</label>
-		<input type="text" placeholder="Ingresa tu cedula" name="ced" id="ced" required />
-
-		<label for="nombre">Nombre</label>
-		<input type="text" placeholder="Ingresa tu nombre completo" name="usuario" id="usuario" required />
-
-		<label for="correo">Correo</label>
-		<input type="text" placeholder="Ingresa tu correo" name="correo" id="correo" required />
-
-
-		<label for="telefono">Telefono</label>
-		<input type="text" placeholder="Ingresa tu teléfono" name="telefono" id="telefono" required />
-	  <br/>    
-
-      <input class='btn btn-success' type="submit" id="registrar" value='registrar'>
-                </div>
+                    <button type="submit" class="btn btn-primary">Buscar Cedula</button>
+                </form>
             </div>
         </div>
     </div>
-	<?php 
-		error_log($config['ahora'] . ' - inicio.php' . " - linea 77 \n", 3, $config['ruta']);
-	?>
-    <!------------------------------- -->
-    <!-- Carga de archivos JavaScript -->
-    <!------------------------------- -->
-    <!-- Librerías externas primero   -->
-    <!-- Bootstrap core JavaScript    -->
-    <!------------------------------- -->
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>  <!-- Bootstrap -->
-    <script src="js/datatables.min.js"></script>  <!-- DataTables -->
-    <script src="/rsvsalon/configuraciones/node_modules/sweetalert2/dist/sweetalert2.js"></script>
-    
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.js"></script>
-    <!--     <script src="https://kit.fontawesome.com/0273d57df4.js" crossorigin="anonymous"></script> -->
-	<script src="/rsvsalon/public/assets/fontawesome/js/0273d57df4.js" crossorigin="anonymous"></script>
-    <script src="/rsvsalon/public/js/ValidarUsuario.js"></script>	
+</div>
+
+<!-- Segundo Modal cargando Mas campos -->
+<!-- Modal para Capturar Datos -->
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventModalLabel">Verificar Datos del Usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="eventForm">
+                    <input type="hidden" id="start">
+                    <input type="hidden" id="end">
+
+                    <div class="mb-3">
+                        <label for="cedula2" class="form-label">Nro. Cédula</label>
+                        <input type="text" class="form-control" id="cedula2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-$(document).ready(function(){
-    $('#modelId').modal({
-      backdrop: 'static',
-      keyboard: false
+document.addEventListener("DOMContentLoaded", function () {
+    // Mostrar la ventana modal
+    var myModal = new bootstrap.Modal(document.getElementById("eventCedula"));
+    myModal.show();
+
+    // Agregar un listener al formulario para capturar la cédula y hacer el fetch
+    //document.getElementById('eventForm').addEventListener('submit', function(event) {
+    document.getElementById('eventFormCedula').addEventListener('submit', function(event) {
+
+        // Prevenir el envío predeterminado del formulario (recarga de página)
+        event.preventDefault();
+
+        // Obtener el valor de la cédula del input
+        //var cedula = document.getElementById('cedula').value;
+        var cedula = document.querySelector('#eventCedula input[id="cedula"]').value;
+        // Realizar la solicitud fetch
+       // fetch('./App/Controladores/comprobarcedulaNew.php', {
+        fetch('./App/Controladores/verificar_cedula.php', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `cedula=${encodeURIComponent(cedula)}`
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error HTTP: ${response.status}`);
+            }
+            return response.json();  // Parsear la respuesta como JSON
+        })
+        .then(data => {
+
+            if (data && !data.error) {
+                console.log('estoy en el 1er MODAL');
+                console.log('Respuesta del servidor:', data); // Depuración
+                console.log('Valor de existe:', data.existe);
+                console.log('Respuesta completa:', data);
+                console.log('Cedula:', data.cedula);
+                console.log('Nombre:', data.nombre);
+                console.log('Telefono:', data.telefono);
+                console.log('Email:', data.email);
+            }
+            if (!data || Object.keys(data).length === 0 || data.existe === false) {
+             // Voy al Alta de Usuario
+                // Si no existen datos o el backend devuelve "existe: false"
+                window.location.href = "./App/Vistas/altaUsuario.php?cedula=" + encodeURIComponent(cedula);
+
+            } else {
+                myModal.hide();
+                var eventModal = new bootstrap.Modal(document.getElementById("eventModal"), { keyboard: false });
+                eventModal.show();
+
+                setTimeout(() => {
+                    //document.querySelector('#eventModal #cedula2').value = data.cedula;
+                    document.getElementById('cedula2').value = cedula;
+                    //document.getElementById('cedula').value = data.cedula;
+                    document.getElementById('nombre').value = data.nombre;
+                    document.getElementById('telefono').value = data.telefono;
+                    document.getElementById('email').value = data.email;
+                }, 500);
+            }
+        })
+        .catch(error => {
+            console.error('Error en fetch:', error);
+            alert("Hubo un error al procesar la solicitud. Intente nuevamente.");
+        });
     });
+    // -----------------------------------------------------------------------------------------------
+    // Agregar un listener al formulario del segundo modal
+    // -----------------------------------------------------------------------------------------------
+     document.getElementById('eventModal').querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del formulario (recarga de página)
+         // Obtener el valor del primer modal
+        let cedula = document.getElementById("cedula").value;
 
-    var modal2 = document.getElementById('modelId');
-    
-    $('#cedula').on("change", function(){
-        alert('se modifica cedula funcion para comprobarcedulaNew');
-        let cedula = $(this).val();
-        alert('Cedula: ' + cedula);
-        
-        if(!(/^\d{10}$/.test(cedula))){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Cedula deben ser 10 digitos',
-                showConfirmButton: true
-            });
-        } else {
-            $.ajax({
-                url: "./App/Controladores/comprobarcedulaNew.php",
-                type: "POST",
-                data: { cedula: cedula },
-                success: function(respuesta){
-                    console.log("Respuesta del servidor: " + respuesta); // Verifica la respuesta
+        // Pasar el valor al segundo modal
+        document.getElementById("cedula2").value = cedula;
 
-                    if (respuesta == "EXISTE") {
-                        window.location.href = "./solicitudReserva1.php";
-                    } else if (respuesta == "NOEXISTE") {
-                        alert('NO EXISTE');
-                        // Verifica si la URL está bien formateada
-                        console.log("Redirigiendo a: " + "./App/Vistas/altaUsuario.php?cedula=" + cedula);
-                       //$('#modelId').modal('show');
-					   window.location.href = "./App/Vistas/altaUsuario.php?cedula=" + cedula;
-                    } else {
-                        alert("Respuesta inesperada: " + respuesta);
-                    }
-                },
-				error: function(xhr, status, error) {
-					console.error("Error en AJAX:", error);
-					alert("Error al conectar con el servidor.");
-				}
-            });
-        }
+        // -----------------------------------------------------------------------------------------------
+        console.log('1-Mando la cedula del primer modal: ', encodeURIComponent(cedula));
+        window.location.href = "./App/Vistas/altaUsuario.php?cedula=" + encodeURIComponent(cedula);
+        // -----------------------------------------------------------------------------------------------
+        // Continuamos con el flujo de trabajo y pasamos a mostrar 
+        // la Solicitud de Reserva
+        // -----------------------------------------------------------------------------------------------
+        window.location.href = "/rsvsalon/solicitudReserva1.php";
+        // -----------------------------------------------------------------------------------------------
+        // var cedula = document.querySelector('#eventCedula input[id="cedula"]').value;
+      //  fetch('./App/Controladores/verificar_cedula.php', {
+        fetch('./App/Controladores/verificar_cedula.php', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `cedula=${encodeURIComponent(cedula2)}`
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error HTTP: ${response.status}`);
+            }
+            return response.json();  // Parsear la respuesta como JSON
+        })
+        .then(data => {
+            console.log('estoy en el 2do MODAL');
+            console.log('Respuesta del servidor:', data); // Depuración
+            console.log('Valor de existe:', data.existe);
+            console.log('Respuesta completa:', data);
+            console.log('Cedula:', data.cedula);
+            console.log('Nombre:', data.nombre);
+            console.log('Telefono:', data.telefono);
+            console.log('Email:', data.email);
+
+            if (!data || Object.keys(data).length === 0 || data.existe === false) {
+                // Voy al Alta de Usuario
+                // Si no existen datos o el backend devuelve "existe: false"
+                console.log('2-Voy a mandar la ceula del primer modal: ', encodeURIComponent(cedula));
+                window.location.href = "./App/Vistas/altaUsuario.php?cedula=" + encodeURIComponent(cedula);
+
+            }else{
+                // Redirigir a solicitudReserva1.php después de enviar el formulario
+                window.location.href = "/rsvsalon/solicitudReserva1.php";
+            }
+        });
     });
 });
-
-/*
-$(document).ready(function () {
-    // Muestra el modal
-    $('#modelId').modal('show');
-});
-*/
 </script>
 
-	
 </body>
 </html>

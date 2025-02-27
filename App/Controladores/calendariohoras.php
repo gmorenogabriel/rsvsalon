@@ -40,6 +40,31 @@
 	</div>
 </div>
 
+<!-- Cedula  -->
+ <!-- Modal para Capturar Datos -->
+<div class="modal fade" id="eventCedula" tabindex="-1" aria-labelledby="eventModalCedula" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventModalCedula">Nuevo Evento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="eventForm">
+                    <input type="hidden" id="start">
+                    <input type="hidden" id="end">
+
+                    <div class="mb-3">
+                        <label for="cedula" class="form-label">Nro. Cédula</label>
+                        <input type="text" class="form-control" id="cedula" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar Cedula</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal para Capturar Datos -->
 <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -83,6 +108,10 @@
 <!-- Contenedor del mensaje de error -->
 
 <script>
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
 var calendarEl = document.getElementById("calendar");
 var alertShown = false; // Bandera para evitar múltiples alertas
@@ -196,7 +225,9 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
         document.getElementById("end").value = info.endStr;
 
         // Mostrar la ventana modal
-        var myModal = new bootstrap.Modal(document.getElementById("eventModal"));
+         let myModal = new bootstrap.Modal(document.getElementById("eventCedula"));
+       //  ORIGINAL GM 25 FEB 2025
+       // var myModal = new bootstrap.Modal(document.getElementById("eventModal"));
         myModal.show();
     },
 
@@ -268,6 +299,40 @@ document.getElementById("eventForm").addEventListener("submit", function(e) {
     console.log('Fecha inicio corregida :', inicio);
     console.log('Fecha fin corregida :', fin);
 
+          // Ocultar el modal
+          var modal = bootstrap.Modal.getInstance(document.getElementById("eventCedula"));
+           modal.hide();
+        // Enviar datos al backend (AJAX con fetch) busco la Cedula en la Tabla Usuarios
+        fetch("verificar_cedula.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `cedula=${encodeURIComponent(cedula)}`
+        })  
+        .then(response => {
+            
+            if (!response.ok) {
+                throw new Error(`Error HTTP: ${response.status}`);                
+            }
+            return response.json();  // Obtener la respuesta como texto      
+        })
+        .then(data => {
+            console.log("Respuesta recibida: ", data);  // Ver en consola
+            if (data.error) {
+                console.log('Usuario no encontrado');
+            }else {
+                console.log('Nombre: ', data.nombre);
+                console.log('Email: ', data.email);
+            }
+
+        })   
+        .catch(error => console.error("Error en fetch:", error));
+
+        let myModal = new bootstrap.Modal(document.getElementById("eventModal"));
+       //  ORIGINAL GM 25 FEB 2025
+       // var myModal = new bootstrap.Modal(document.getElementById("eventModal"));
+        myModal.show();
+      
+
     // Enviar datos al backend (AJAX con fetch)
     fetch("guardar_evento.php", {
         method: "POST",
@@ -285,10 +350,10 @@ document.getElementById("eventForm").addEventListener("submit", function(e) {
         if (data.trim() === "ok") {
             start = inicio;
             end = fin;
-            
+
             // Crear el evento en FullCalendar con Cédula, Nombre y Celular
             calendar.addEvent({
-                title: title, // Título
+                title: `${cedula} - ${nombre} \n ${celular} \n ${title} - `, // Modificado para incluir más datos
                 start: start, // Fecha de inicio
                 end: end, // Fecha de fin
                 extendedProps: {
@@ -338,6 +403,7 @@ function convertirFecha(fechaStr) {
 
     return fechaISO;
 }
+
 </script>
 
 </body>

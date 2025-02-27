@@ -1,7 +1,7 @@
 // ValidarUsuario.js NO VA ESTE
 <?php
 $ahora = date('Y-m-d H:i:s');
-error_log($ahora . ' - ValidarUsuarios.js'  . "\n", 3, $ruta);
+error_log($config['ahora'] . ' - ValidarUsuarios.js'  . "\n", 3, $config['ruta']);
 ?>
 $(document).ready(function(){
     var modal2=document.getElementById('modelId');

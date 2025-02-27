@@ -28,7 +28,7 @@
     <div class="form-login">
 <?php
 	$ruta='./writeable/rsvsalon.log';
-	error_log('index.php' . " - linea 32 \n", 3, $ruta);
+	error_log('index.php' . " - linea 32 \n", 3, $config['ruta']);
 ?>
         <label for="">Cedula</label>
         <input type="text" id='cedula' placeholder="ingresa tu cedula" >
